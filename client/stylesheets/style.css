@@ -10,6 +10,7 @@
  * Core: General Layout Style
  * -------------------------
  */
+
 html,
 body {
   min-height: 100%;
@@ -25,6 +26,9 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   overflow-y: auto;
+}
+html {
+  background-color: #d2d6de;
 }
 /* Layout */
 .wrapper {

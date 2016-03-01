@@ -1,8 +1,37 @@
 <template name="register">
-    <h2>Register</h2>
-    <form class="register">
-        <p>Email: <input type="email" name="email"></p>
-        <p>Password: <input type="password" name="password"></p>
-        <p><input type="submit" value="Register"></p>
-    </form>
+
+<div class="register-page">
+    <div class="register-box">
+      <div class="register-logo">
+        <a href="{{pathFor route='home'}}"><b>YASH</b> Register</a>
+      </div>
+
+      <div class="register-box-body">
+        <form class="form-register">
+          <div class="form-group">
+            <input type="username" class="form-control" placeholder="Username">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <input type="password" name="re_password" class="form-control" placeholder="Retype password">
+          </div>
+          <div class="row">
+            <div class="col-xs-8">
+                <a href="{{pathFor route='login'}}" class="text-center">I already have account</a>
+            </div><!-- /.col -->
+            <div class="col-xs-4">
+              <button type="submit" class="btn btn-primary btn-block btn-flat btn-signup">Register</button>
+            </div><!-- /.col -->
+          </div>
+        </form>
+
+      </div><!-- /.form-box -->
+    </div><!-- /.register-box -->
+</div>
+
 </template>
